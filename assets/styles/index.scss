@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con{
+    margin: auto;
+    padding: 0 32px;
+    max-width: 1300px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin betw{
+    display: flex;
+    justify-content: space-between;
+}
+
+@import 'nav';
+// @import "menu";
+// @import "section1";
+// @import "section2";
+// @import "section3";
