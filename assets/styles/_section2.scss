@@ -1,0 +1,155 @@
+.section2 {
+    width: 100%;
+
+    .sec2con {
+        width: 100%;
+        @include center;
+        flex-direction: column;
+        gap: 50px;
+
+        .text {
+            width: 50%;
+            @include center;
+            flex-direction: column;
+            gap: 10px;
+
+            h2 {
+                font-size: 16px;
+                letter-spacing: 2.6px;
+                color: rgb(173, 181, 189);
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                color: gray;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        .sorch{
+            width: 30%;
+            display: flex;
+            gap: 20px;
+            select, input{
+                height: 30px;
+                outline: none;
+                padding-left: 5px;
+            }
+        }
+
+        .cards {
+            flex-wrap: wrap;
+            width: 100%;
+            @include betw;
+            gap: 20px;
+
+            .card {
+                flex: 1 1 calc(33% - 20px);
+                max-width: calc(33% - 20px);
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                &:hover .img img {
+                    transform: scale(1.05);
+                }
+
+                .img {
+                    width: 100%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transition: transform 0.4s ease;
+                    }
+                }
+
+                a {
+                    color: black;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+
+                span {
+                    width: 30%;
+                    @include betw;
+
+                    i {
+                        font-style: normal;
+                    }
+
+                    .bi-star-fill {
+                        color: orange;
+                    }
+
+                    .bi-heart-fill {
+                        color: red;
+                    }
+                }
+
+                aside {
+                    width: 50%;
+                    @include betw;
+
+                    a {
+                        width: 70px;
+                        height: 40px;
+                        border: 3px solid;
+                        @include center;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: white;
+                            background-color: black;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 560px) {
+    .section2 {
+        .sec2con {
+            .text {
+                width: 70%;
+            }
+
+            .cards {
+                .card {
+                    flex: 1 1 calc(50% - 20px);
+                    max-width: calc(50% - 20px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section2 {
+        .sec2con {
+            .text {
+                width: 100%;
+            }
+
+            .cards {
+                .card {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.menu {
+    position: fixed;
+    top: 20px;
+    right: -200px;
+    background-color: white;
+    width: 150px;
+    font-size: 28px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        a{
+            color: black;
+            &:hover{
+                color: orange;
+            }
+
+        }
+    }
+}

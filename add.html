@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selling</title>
+    <title>Add</title>
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
     <nav>
         <div class="con navcon">
@@ -26,7 +24,7 @@
                 </div>
             </div>
             <div class="bot">
-                <a href="#">
+                <a href="./index.html">
                     <h1>Selling.</h1>
                 </a>
                 <ul>
@@ -37,7 +35,6 @@
                     <a href="#">Testimonals</a>
                     <a href="#">Blog</a>
                     <a href="#">Contact</a>
-                    <a href="./add.html">Add</a>
                 </ul>
                 <i class="bi bi-list"></i>
             </div>
@@ -52,39 +49,25 @@
             <a href="#">Testimonals</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
-            <a href="./add.html">Add</a>
         </ul>
     </div>
-    <div class="section1">
-        <div class="con sec1con">
-            <div>
-                <h1>Shop With Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
-                    facere deleniti fuga officia.</p>
-                <span><button class="b1">SHOP NOW</button> <button class="b2">CLUB MEMBERSHIP</button></span>
-            </div>
-        </div>
-    </div>
-    <div class="section2">
-        <div class="con sec2con">
-            <div class="text">
-                <h2>POPULAR PRODUCTS</h2>
-                <h1>Our Products</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga
-                    ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
-            </div>
-            <div class="sorch">
-                <input type="search" placeholder="Search" id="search">
-                <select name="sort" id="sort">
-                    <option value="def">Default</option>
-                    <option value="az">A-Z</option>
-                    <option value="za">Z-A</option>
-                </select>
-            </div>
-            <div class="cards">
-               
-            </div>
-        </div>
+    <div class="addpage">
+        <form>
+            <label for="file">Image:</label>
+            <input type="file" name="file" id="file" accept="/*image">
+            <div><img src="" alt=""></div>
+    
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter Name">
+    
+            <label for="text">Text:</label>
+            <input type="text" placeholder="Enter Text">
+
+            <input type="submit">
+        </form>
+        <table>
+            
+        </table>
     </div>
     <footer>
         <p>
@@ -92,9 +75,7 @@
         </p>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/add.js"></script>
 </body>
-
 </html>

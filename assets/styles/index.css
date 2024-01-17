@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .con {
@@ -20,64 +21,339 @@ a {
 
 nav {
   width: 100%;
+  position: fixed;
+  z-index: 101;
+  background-color: white;
 }
-nav .nav1con {
+nav .navcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+nav .navcon .top {
   width: 100%;
   height: 50px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid;
 }
-nav .nav1con ul {
+nav .navcon .top ul {
   display: flex;
   gap: 5px;
   font-size: 24px;
 }
-nav .nav1con ul i {
+nav .navcon .top ul i {
   cursor: pointer;
 }
-nav .nav1con ul i:hover {
+nav .navcon .top ul i:hover {
   color: orange;
 }
-nav .nav1con div {
+nav .navcon .top div {
   display: flex;
   gap: 10px;
 }
-nav .nav1con div a {
+nav .navcon .top div a {
   color: black;
 }
-nav .nav1con div a i {
+nav .navcon .top div a i {
   color: orange;
 }
-nav .nav1con div a:hover i {
+nav .navcon .top div a:hover i {
   filter: brightness(80%);
 }
-nav .nav2con {
+nav .navcon .bot {
   width: 100%;
   height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
 }
-nav .nav2con .bi-list {
-  font-size: 24px;
+nav .navcon .bot .bi-list {
+  font-size: 40px;
   cursor: pointer;
   display: none;
-}
-nav .nav2con h1 {
-  font-size: 40px;
   color: black;
 }
-nav .nav2con ul {
+nav .navcon .bot h1 {
+  font-size: 48px;
+  color: black;
+}
+nav .navcon .bot ul {
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
-nav .nav2con ul a {
+nav .navcon .bot ul a {
   color: black;
 }
-nav .nav2con ul a:hover {
+nav .navcon .bot ul a:hover {
   color: orange;
   transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 992px) {
+  nav .navcon .top {
+    display: none;
+  }
+  nav .navcon .bot ul {
+    display: none;
+  }
+  nav .navcon .bot .bi-list {
+    display: block;
+  }
+}
+.menu {
+  position: fixed;
+  top: 20px;
+  right: -200px;
+  background-color: white;
+  width: 150px;
+  font-size: 28px;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu ul a {
+  color: black;
+}
+.menu ul a:hover {
+  color: orange;
+}
+
+.addpage {
+  width: 100%;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 600px;
+}
+.addpage form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(rgb(245, 225, 161), rgb(202, 128, 0));
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.addpage form div {
+  width: 150px;
+  height: 150px;
+  border-radius: 99999999px;
+  border: 2px solid;
+  margin-left: calc(50% - 75px);
+}
+.addpage form input {
+  height: 30px;
+  padding-left: 5px;
+  outline: none;
+}
+
+.section1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 125px 0;
+  min-height: 700px;
+  margin-bottom: 100px;
+}
+.section1 .sec1con {
+  width: 100%;
+}
+.section1 .sec1con div {
+  width: 50%;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  gap: 20px;
+}
+.section1 .sec1con div h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+}
+.section1 .sec1con div p {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+.section1 .sec1con div .b1 {
+  color: white;
+  border: 4px solid white;
+  background-color: transparent;
+  height: 50px;
+  padding: 0 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.section1 .sec1con div .b1:hover {
+  color: black;
+  border: 4px solid black;
+  background-color: white;
+}
+.section1 .sec1con div .b2 {
+  height: 50px;
+  cursor: pointer;
+  color: black;
+  border: 4px solid white;
+  background-color: white;
+  padding: 0 50px;
+  font-size: 24px;
+}
+.section1 .sec1con div .b2:hover {
+  color: white;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .section1 .sec1con div {
+    width: 100%;
+  }
+}
+.section2 {
+  width: 100%;
+}
+.section2 .sec2con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.section2 .sec2con .text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.section2 .sec2con .text h2 {
+  font-size: 16px;
+  letter-spacing: 2.6px;
+  color: rgb(173, 181, 189);
+}
+.section2 .sec2con .text h1 {
+  font-size: 48px;
+}
+.section2 .sec2con .text p {
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+}
+.section2 .sec2con .sorch {
+  width: 30%;
+  display: flex;
+  gap: 20px;
+}
+.section2 .sec2con .sorch select, .section2 .sec2con .sorch input {
+  height: 30px;
+  outline: none;
+  padding-left: 5px;
+}
+.section2 .sec2con .cards {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.section2 .sec2con .cards .card {
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.section2 .sec2con .cards .card:hover .img img {
+  transform: scale(1.05);
+}
+.section2 .sec2con .cards .card .img {
+  width: 100%;
+  overflow: hidden;
+}
+.section2 .sec2con .cards .card .img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+.section2 .sec2con .cards .card a {
+  color: black;
+  font-size: 18px;
+}
+.section2 .sec2con .cards .card a:hover {
+  color: orange;
+}
+.section2 .sec2con .cards .card span {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .sec2con .cards .card span i {
+  font-style: normal;
+}
+.section2 .sec2con .cards .card span .bi-star-fill {
+  color: orange;
+}
+.section2 .sec2con .cards .card span .bi-heart-fill {
+  color: red;
+}
+.section2 .sec2con .cards .card aside {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .sec2con .cards .card aside a {
+  width: 70px;
+  height: 40px;
+  border: 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.section2 .sec2con .cards .card aside a:hover {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 992px) and (min-width: 560px) {
+  .section2 .sec2con .text {
+    width: 70%;
+  }
+  .section2 .sec2con .cards .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 560px) {
+  .section2 .sec2con .text {
+    width: 100%;
+  }
+  .section2 .sec2con .cards .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+footer {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+footer p {
+  color: gray;
+}
+footer p a {
+  color: gray;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "img": "https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": 2,
+      "img": "https://preview.colorlib.com/theme/selling/images/model_2_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": 3,
+      "img": "https://preview.colorlib.com/theme/selling/images/model_3_bg.jpg",
+      "name": "aWild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": 4,
+      "img": "https://preview.colorlib.com/theme/selling/images/model_4_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": 5,
+      "img": "https://preview.colorlib.com/theme/selling/images/model_5_bg.jpg",
+      "name": "zWild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": 6,
+      "img": "https://preview.colorlib.com/theme/selling/images/product_1_bg.jpg",
+      "name": "Wild West Hoodie",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    }
+  ]
+}

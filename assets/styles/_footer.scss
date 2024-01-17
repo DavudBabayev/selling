@@ -1,0 +1,11 @@
+footer{
+    margin: 100px 0;
+    @include center;
+    align-items: center;
+    p{
+        color: gray;
+        a{
+            color: gray;
+        }
+    }
+}
